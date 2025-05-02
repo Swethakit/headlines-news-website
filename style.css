@@ -1,0 +1,103 @@
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Article styling */
+  .article {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article h3 {
+    margin-top: 0;
+  }
+  
+  .article a {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  .article a:hover {
+    text-decoration: underline;
+  }
+  
+  .article p {
+    margin: 10px 0;
+  }
+  
+  .article small {
+    color: #777;
+  }
+  
+  /* Dark mode styles */
+  #toggle-dark {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark .article {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  }
+  
+  body.dark a {
+    color: #00bcd4;
+  }
+  
+  body.dark #toggle-dark {
+    background-color: #e0e0e0;
+    color: #121212;
+  }
+  
+  /* Spinner animation styles */
+  .spinner {
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    text-align: center;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
